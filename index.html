@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <video controls="controls">
+    <source src="./videoplayback.mp4" type="video/mp4"><source>
+  </video>
+  <script>
+    video.addEventListener("click", (e) => {
+      e.preventDefault();
+      if(video.paused) {
+        video.play();
+        console.log("play");
+      } else if(video.played) {
+        video.pause();
+        console.log("pause");
+      }
+    })
+  </script>
+</body>
+</html>
